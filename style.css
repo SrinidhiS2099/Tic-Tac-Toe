@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Play:wght@400;700&family=Protest+Revolution&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Play:wght@400;700&family=Protest+Revolution&family=Satisfy&display=swap');
+
+body {
+    font-family: "Play", sans-serif;
+    text-align: center;
+    background-color: purple;
+    margin: 0;
+    padding: 20px;
+    box-shadow: #000000;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background: #1fff06e9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  }
+  
+  h1 {
+    color: #333;
+    text-decoration:underline;
+    font-family: "Bungee Spice", sans-serif;
+    font-weight: 400;
+    font-size: 300%;
+  }
+
+  button{
+    border-radius: 5px;
+    padding: 6px;
+    font-family: "Play", sans-serif;
+    margin-top: 20px;
+    
+  }
+  
+
+  .player-input, .scoreboard {
+    margin: 20px 0;
+    border-radius: 5px;
+  }
+
+  .scoreboard{
+    background-color:rgba(252, 252, 252, 0.542);
+  }
+  
+  #game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+    margin: 20px auto;
+    width: 300px;
+    box-shadow: #000000;
+  }
+  
+  .cell {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 4px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: #000000;
+  }
+  
+  .cell.taken {
+    pointer-events: none;
+    background-color: #ffffff;
+    box-shadow: #000000;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
